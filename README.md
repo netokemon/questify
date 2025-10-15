@@ -45,11 +45,16 @@ Ao completar as missões, o herói sobe de nível, criando um ciclo de **motiva�
 - Estudantes (Universitários e Vestibulandos)  
 - Concurseiros e Jovens Profissionais  
 - Pessoas com dificuldade de foco e disciplina (incluindo TDAH)  
-
+---
+## 📚 Bibliotecas
+- **pwinput**
+- **os**
+- **json**
+- **time**
 ---
 
 ## 👥 Autores
 - **Pedro Lucca**  
-- **Aguinaldo Neto**  
+- **Aguinaldo Neto**
 
----
+
