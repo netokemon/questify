@@ -47,7 +47,7 @@ Ao completar as missões, o herói sobe de nível, criando um ciclo de **motiva�
 - Pessoas com dificuldade de foco e disciplina (incluindo TDAH)  
 ---
 ## 📚 Bibliotecas
-- **pwinput**
+- **pwinput** Usada para mascarar senha no console.
 - **os**
 - **json**
 - **time**
