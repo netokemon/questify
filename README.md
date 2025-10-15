@@ -17,7 +17,7 @@ Ao completar as missões, o herói sobe de nível, criando um ciclo de **motiva�
 - Exibir status básicos:
   - Nome  
   - Nível  
-  - Barra de Experiência (XP)  
+  - Quantidade de Experiência (XP)  
 
 ### 📜 Missões (Tarefas)
 - Adicionar novas missões com:
@@ -28,7 +28,7 @@ Ao completar as missões, o herói sobe de nível, criando um ciclo de **motiva�
 - Marcar uma missão como concluída.  
 - XP correspondente é adicionado ao herói.  
 - Missão é removida da lista de pendentes.  
-- Possibilidade de adicionar **fotos e anotações** como comprovação.  
+ 
 
 ### 📈 Sistema de Level Up
 - Ao encher a barra de XP, o herói sobe de nível.  
