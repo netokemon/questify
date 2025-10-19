@@ -50,4 +50,3 @@ def mago():
                                                                                     
  """)
 
-print(mago())

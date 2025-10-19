@@ -56,7 +56,7 @@ def view_hero(user_atual, all_users):
     xp=dados_heroi["xp"]
     
     if classe_heroi == "Guerreiro":
-        print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {xp}/{level*100}")
+        print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {level} | XP: {xp}/{level*100}")
         print(knight())
         input("Pressione ENTER para voltar...")
     elif classe_heroi == "Mago":
@@ -556,7 +556,6 @@ while True:
             user_logado = None
             time.sleep(2)
             
-        
         elif menu == "4":
             edit_conta(userdata)
         
