@@ -1,0 +1,13 @@
+{
+    "pedro": {
+        "senha": "pedro123",
+        "email": "pedro@.",
+        "heroi": {
+            "nome": "Pablin",
+            "classe": "Guerreiro",
+            "level": 3,
+            "xp": 0,
+            "quests": []
+        }
+    }
+}
