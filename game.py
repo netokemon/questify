@@ -247,7 +247,6 @@ def startgame(user_atual, all_users):
          
         while True:
             clear()
-            heroi=all_users[user_atual]["heroi"]
             heroname= dados_heroi["nome"]
             xp= dados_heroi["xp"]
             level=dados_heroi["level"]

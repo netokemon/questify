@@ -86,7 +86,8 @@ def login(usuarios):
             else:
                 print("Seu nome de usuário ou senha estão incorretos")
                 time.sleep(2)
-                return None
+                clear()
+                continue
 
 
 def edit_conta(usuarios):
