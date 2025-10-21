@@ -1,6 +1,3 @@
-import pwinput
-import json
-import os
 import time
 
 from database import load_dados

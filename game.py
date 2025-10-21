@@ -1,7 +1,7 @@
 import time
 from utils import clear
 from database import save_dados
-from classes import knight, mago, thief
+from classes import warrior, mago, thief
 
 def level_up(heroi):
     level_atual = heroi.get("level", 1)
@@ -31,15 +31,15 @@ def view_hero(user_atual, all_users):
     
     if classe_heroi == "Guerreiro":
         print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {level} | XP: {xp}/{level*100}")
-        print(knight())
+        warrior()
         input("Pressione ENTER para voltar...")
     elif classe_heroi == "Mago":
         print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {xp}/{level*100}")
-        print(mago())
+        mago()
         input("Pressione ENTER para voltar...")
     else:
         print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {xp}/{level*100}")
-        print(thief())
+        thief()
         input("Pressione ENTER para voltar...")
 
 
@@ -68,15 +68,18 @@ def criar_heroi(usuario, all_users):
     time.sleep(2)
     
     while True:
-        print(knight())
+        print("=-=-=-=-=-=-=-=-=GUERREIRO=-=-=-=-=-=-=-=-=")
+        warrior()
         time.sleep(3)
         clear()
        
-        print(mago())
+        print("=-=-=-=-=-=-=-=-=MAGO=-=-=-=-=-=-=-=-=")
+        mago()
         time.sleep(3)
         clear()
         
-        print(thief())
+        print("=-=-=-=-=-=-=-=-=LADRÃO=-=-=-=-=-=-=-=-=")
+        thief()
         time.sleep(3)
         clear()
         choice = input("[1] GUERREIRO \n[2] MAGO \n[3] LADRÃO \n[4] VISUALIZAR NOVAMENTE \nQual sua classe?: ")

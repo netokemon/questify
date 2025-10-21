@@ -9,5 +9,10 @@
             "xp": 30,
             "quests": []
         }
+    },
+    "rogerin": {
+        "senha": "coxinha123",
+        "email": "rogerio@gmail.com",
+        "heroi": null
     }
 }
