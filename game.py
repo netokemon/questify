@@ -3,49 +3,6 @@ from utils import clear
 from database import save_dados
 from classes import warrior, mago, thief
 
-def level_up(heroi):
-    level_atual = heroi.get("level", 1)
-    xp_atual = heroi.get("xp", 0) 
-    xp_need = level_atual*100
-    while xp_atual >= xp_need:
-        heroi["level"] += 1
-        heroi["xp"] -= xp_need
-        clear()
-        print("="*40)
-        print(f"      PARABÉNS {heroi['nome']}! VOCÊ SUBIU DE NÍVEL!")
-        print(f"         NÍVEL {heroi['level']} ALCANÇADO!")
-        print("="*40)
-        time.sleep(3)
-        
-        xp_atual=heroi["xp"]
-        level_atual=heroi["level"]
-        xp_need=level_atual*100
-
-def view_hero(user_atual, all_users):
-    clear()
-    dados_heroi=all_users[user_atual]["heroi"]
-    heroname=dados_heroi["nome"]
-    classe_heroi=dados_heroi["classe"]
-    level=dados_heroi["level"]
-    xp=dados_heroi["xp"]
-    
-    if classe_heroi == "Guerreiro":
-        print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {level} | XP: {xp}/{level*100}")
-        warrior()
-        input("Pressione ENTER para voltar...")
-    elif classe_heroi == "Mago":
-        print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {xp}/{level*100}")
-        mago()
-        input("Pressione ENTER para voltar...")
-    else:
-        print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {xp}/{level*100}")
-        thief()
-        input("Pressione ENTER para voltar...")
-
-
-
-
-
 def criar_heroi(usuario, all_users):
     clear()
     print(f"Bem-vindo pela primeira vez ao Questify {usuario}!")
@@ -108,6 +65,32 @@ def criar_heroi(usuario, all_users):
         print(f"Parabéns, seu Herói {heroname}, o {classe_heroi}, foi criado com sucesso.")
         input("Pressione ENTER para continuar...")
         return dados_heroi
+
+
+
+def view_hero(user_atual, all_users):
+    clear()
+    dados_heroi=all_users[user_atual]["heroi"]
+    heroname=dados_heroi["nome"]
+    classe_heroi=dados_heroi["classe"]
+    level=dados_heroi["level"]
+    xp=dados_heroi["xp"]
+    
+    if classe_heroi == "Guerreiro":
+        print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {level} | XP: {xp}/{level*100}")
+        warrior()
+        input("Pressione ENTER para voltar...")
+    elif classe_heroi == "Mago":
+        print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {xp}/{level*100}")
+        mago()
+        input("Pressione ENTER para voltar...")
+    else:
+        print(f"Nome: {heroname} | Classe: {classe_heroi} | Nível: {xp}/{level*100}")
+        thief()
+        input("Pressione ENTER para voltar...")
+
+
+
 
 
 def add_quests(user_logado, all_users):
@@ -228,6 +211,25 @@ def edit_quests(user_logado, all_users):
             except ValueError:
                 print("Entrada inválida, digite um número. ")
                 time.sleep(2)
+
+def level_up(heroi):
+    level_atual = heroi.get("level", 1)
+    xp_atual = heroi.get("xp", 0) 
+    xp_need = level_atual*100
+    while xp_atual >= xp_need:
+        heroi["level"] += 1
+        heroi["xp"] -= xp_need
+        clear()
+        print("="*40)
+        print(f"      PARABÉNS {heroi['nome']}! VOCÊ SUBIU DE NÍVEL!")
+        print(f"         NÍVEL {heroi['level']} ALCANÇADO!")
+        print("="*40)
+        time.sleep(3)
+        
+        xp_atual=heroi["xp"]
+        level_atual=heroi["level"]
+        xp_need=level_atual*100
+
 
 
 def startgame(user_atual, all_users):

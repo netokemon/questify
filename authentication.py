@@ -124,6 +124,10 @@ def edit_conta(usuarios):
                         usuarios[user]["senha"]=newpswd
                         save_dados(usuarios)  
                         return
+                    
+                    elif len(newpswd) < 5:
+                        print("Sua senha deve ter 5 ou mais caracteres.") 
+                    
                     else:
                         print("As senhas não coincidem, tente novamente")
             else:
